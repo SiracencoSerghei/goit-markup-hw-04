@@ -135,7 +135,7 @@ p {
     height: 16px;
 }
 .icon-header: {
-    vertical-align: bottom;
+    margin-top: auto;
 }
 
 
@@ -481,13 +481,13 @@ color: var(--secondary-color);
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    padding: 16px 32px;
 }
 
 .icon-box .icon {
     width: 106px;
     height: 60px;
     fill: var(--primary-color);
-    margin: 16px 32px;
 }
 .icon-box .icon:hover,
 .icon-box .icon:focus,
@@ -513,7 +513,7 @@ color: var(--secondary-color);
     
 }
 
-.list.filter [type="button"] {
+.button-filter {
 
     padding: 6px 22px;
 
@@ -528,16 +528,12 @@ color: var(--secondary-color);
     border-radius: 4px;
 
 }
-.list.filter [type="button"]:hover,
-.list.filter [type="button"]:focus {
+.button-filter:hover,
+.button-filter:focus {
     background: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
-/* .portfolio-filter .list:not(:first-child) {
-    margin-left: 8px; 
-
-}*/
 
 
 /* WORK DESCRIPTION */
@@ -550,24 +546,11 @@ color: var(--secondary-color);
 .work-list {
     display: flex;
     flex-basis: calc((100% - 2*30px)/3);
-
-     /* 3 столбца и 2 отступа по 30px */
-
-/*   
-    margin-top: 0;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    margin-left: 0; 
-    padding: 0;*/
-
 }
-/* .work-list:nth-last-child(-n+3) {
-    margin-bottom: 0;
+.work-list:hover,
+.work-list:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.work-list:nth-child(3n) {
-    margin-right: 0;
-} */
-
 
 .work-list-border {
     margin: 0;
