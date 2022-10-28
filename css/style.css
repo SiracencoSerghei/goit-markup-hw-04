@@ -14,6 +14,8 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--primary-color);
+
+  max-width: 1600px;
 }
 
 h1,
@@ -184,8 +186,9 @@ p {
 }
 
 .footer-box {
-  display: inline-flex;
+  display: flex;
   gap: 70px;
+  align-items: baseline;
 }
 
 .footer-section1 {
@@ -194,7 +197,7 @@ p {
 }
 
 .footer-section2 {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -241,8 +244,7 @@ p {
 }
 
 .join-title {
-  padding-top: 12px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -262,6 +264,8 @@ p {
 /* BANNER SECTION */
 .hero {
   display: flex;
+  max-width: 1600px;
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #c4c4c4;
@@ -269,12 +273,10 @@ p {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../img/banner.jpg);
+     url(../img/banner.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
 
-  /* background-repeat: no-repeat;
-              background-size: 1600px 600px;
-              background-position: 50% 50%; */
 }
 
 .banner-title {
